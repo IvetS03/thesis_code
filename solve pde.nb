@@ -1,0 +1,192 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      6269,        184]
+NotebookOptionsPosition[      5597,        165]
+NotebookOutlinePosition[      5994,        181]
+CellTagsIndexPosition[      5951,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dequation", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"phi", "'"}], "[", "t", "]"}], "==", 
+    RowBox[{"\[Omega]", "+", "m", "-", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"phi", "[", "t", "]"}], "]"}]}]}]}], ";"}], "\n", 
+ RowBox[{"solution", "=", 
+  RowBox[{"DSolve", "[", 
+   RowBox[{"dequation", ",", 
+    RowBox[{"phi", "[", "t", "]"}], ",", "t"}], "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{"solution", ",", 
+    RowBox[{"Assumptions", "->", 
+     RowBox[{"{", 
+      RowBox[{"\[CapitalOmega]", "==", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"\[Omega]", "+", "m"}], ")"}], "^", "2"}], "-", "1"}], 
+        "]"}]}], "}"}]}]}], "]"}], "\n", "\n", 
+  "\n"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.943178483313143*^9, 3.943178506438175*^9}, {
+   3.943178547816615*^9, 3.943178750919574*^9}, {3.94317878990511*^9, 
+   3.943178795671381*^9}, {3.943178908669752*^9, 3.943178947212934*^9}, {
+   3.943179258986724*^9, 3.943179309325778*^9}, 3.943179351994049*^9, {
+   3.94317951422653*^9, 3.943179524531043*^9}, 3.943179594469751*^9, {
+   3.943179919432776*^9, 3.943179928798428*^9}, {3.943179978376644*^9, 
+   3.9431800230888577`*^9}, {3.9431804584605494`*^9, 3.943180487314817*^9}, {
+   3.9441964099013243`*^9, 3.9441964290177917`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"024b37ef-e5fe-40ce-b3a7-c1b97997eeae"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DSolve", "ifun", 
+   "\"Inverse functions are being used by DSolve, so some solutions may not \
+be found.\"", 2, 5, 2, 34072902224323317283, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.944196566046171*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[4]:=",ExpressionUUID->"435d3ea4-4a8e-4fe4-a71f-aba0de338ebf"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"phi", "[", "t", "]"}], "\[Rule]", 
+    RowBox[{"2", " ", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"m", "+", "\[Omega]"}]], 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{
+          SqrtBox[
+           RowBox[{
+            RowBox[{"-", "1"}], "+", 
+            SuperscriptBox["m", "2"], "+", 
+            RowBox[{"2", " ", "m", " ", "\[Omega]"}], "+", 
+            SuperscriptBox["\[Omega]", "2"]}]], " ", 
+          RowBox[{"Tan", "[", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "t"}], " ", 
+               RowBox[{"\[Sqrt]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "m", "+", "\[Omega]"}], ")"}], 
+                  " ", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", "m", "+", "\[Omega]"}], ")"}]}], 
+                 ")"}]}]}], "-", 
+              RowBox[{
+               RowBox[{"\[Sqrt]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", "m", "+", "\[Omega]"}], ")"}], 
+                  " ", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", "m", "+", "\[Omega]"}], ")"}]}], ")"}]}],
+                " ", 
+               TemplateBox[{"1"},
+                "C"]}]}], ")"}]}], "]"}]}]}], ")"}]}], "]"}]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.944196566049313*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"660dc93c-feb2-4144-81cd-fffd1ad9c98c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"phi", "[", "t", "]"}], "\[Rule]", 
+    RowBox[{"2", " ", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"m", "+", "\[Omega]"}]], 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{
+          RowBox[{"\[Sqrt]", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "1"}], "+", "m", "+", "\[Omega]"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", "m", "+", "\[Omega]"}], ")"}]}], ")"}]}], " ", 
+          RowBox[{"Tan", "[", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"\[Sqrt]", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "m", "+", "\[Omega]"}], ")"}], " ", 
+               
+               RowBox[{"(", 
+                RowBox[{"1", "+", "m", "+", "\[Omega]"}], ")"}]}], ")"}]}], 
+            " ", 
+            RowBox[{"(", 
+             RowBox[{"t", "+", 
+              TemplateBox[{"1"},
+               "C"]}], ")"}]}], "]"}]}]}], ")"}]}], "]"}]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.9441965660499763`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"9cb99fc7-63ee-44fe-a5b3-f119a29d920f"]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{328, Automatic}, {Automatic, 43}},
+FrontEndVersion->"14.1 para Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c96f127b-6101-468f-900b-583712719c90"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 1462, 34, 196, "Input",ExpressionUUID->"024b37ef-e5fe-40ce-b3a7-c1b97997eeae"],
+Cell[2041, 58, 381, 9, 26, "Message",ExpressionUUID->"435d3ea4-4a8e-4fe4-a71f-aba0de338ebf"],
+Cell[2425, 69, 1788, 51, 46, "Output",ExpressionUUID->"660dc93c-feb2-4144-81cd-fffd1ad9c98c"],
+Cell[4216, 122, 1365, 40, 46, "Output",ExpressionUUID->"9cb99fc7-63ee-44fe-a5b3-f119a29d920f"]
+}, Open  ]]
+}
+]
+*)
+
